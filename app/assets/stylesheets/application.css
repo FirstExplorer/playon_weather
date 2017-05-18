@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui.min
+ *= require jquery-ui.structure.min
+ *= require jquery-ui.theme.min
  */

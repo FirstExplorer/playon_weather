@@ -1,0 +1,9 @@
+AllCops:
+  Include:
+    - "**/Rakefile"
+  Exclude:
+    - "**/*.gemspec"
+    - "bin/**/*"
+    - "spec/**/*"
+Documentation:
+  Enabled: false
