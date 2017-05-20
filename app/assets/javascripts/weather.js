@@ -2,7 +2,7 @@ $(document).on('turbolinks:load', function(){
   $('#search_city').autocomplete({
     source: function( request, response ){
       $.ajax({
-        url: '/search_city',
+        url: '/locate_search',
         dataType: 'json',
         data: { term: request.term },
         success: function(data){

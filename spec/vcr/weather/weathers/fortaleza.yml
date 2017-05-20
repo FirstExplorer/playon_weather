@@ -1,0 +1,516 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/forecast/daily?APPID=7cf761cff65e3714849911cbf9367ba9&cnt=7&mode=json&q=Fortaleza&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 21 May 2017 13:55:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1941'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/forecast/daily?APPID=7cf761cff65e3714849911cbf9367ba9&cnt=7&mode=json&q=fortaleza&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"city":{"id":6320062,"name":"Fortaleza","coord":{"lon":-38.5247,"lat":-3.7228},"country":"BR","population":0},"cod":"200","message":3.1106699,"cnt":7,"list":[{"dt":1495332000,"temp":{"day":30,"min":30,"max":30.09,"night":30.09,"eve":30,"morn":30},"pressure":1025.65,"humidity":100,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":9.51,"deg":119,"clouds":80},{"dt":1495418400,"temp":{"day":28.34,"min":27.86,"max":29.59,"night":28.92,"eve":27.92,"morn":29.59},"pressure":1024.52,"humidity":100,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":10.18,"deg":111,"clouds":24,"rain":1.47},{"dt":1495504800,"temp":{"day":28.64,"min":27.52,"max":29.04,"night":29.04,"eve":27.52,"morn":28.59},"pressure":1025.11,"humidity":99,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":7.42,"deg":102,"clouds":32,"rain":1.41},{"dt":1495591200,"temp":{"day":27.75,"min":27.69,"max":28.7,"night":28.7,"eve":27.69,"morn":28.35},"pressure":1025.64,"humidity":100,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":5.52,"deg":99,"clouds":32,"rain":0.74},{"dt":1495677600,"temp":{"day":26.47,"min":23.56,"max":31.41,"night":27.78,"eve":23.56,"morn":31.41},"pressure":1007.56,"humidity":0,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":3.15,"deg":63,"clouds":8,"rain":1.28},{"dt":1495764000,"temp":{"day":25.91,"min":22.35,"max":29.79,"night":27.85,"eve":22.35,"morn":29.79},"pressure":1007.92,"humidity":0,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":2.92,"deg":63,"clouds":3,"rain":2.32},{"dt":1495850400,"temp":{"day":25.58,"min":22.61,"max":30.36,"night":28.03,"eve":22.61,"morn":30.36},"pressure":1008.3,"humidity":0,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":3.14,"deg":77,"clouds":10,"rain":1.67}]}'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 13:55:50 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:49877/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:00:54 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70115435905760'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:00:54 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:50391/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:03:26 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70201736119640'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:03:26 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:50552/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:04:03 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70208109927740'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:04:03 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:51537/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:07:03 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70130547196440'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:07:03 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:51927/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:08:40 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70254264311700'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:08:40 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:52859/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:12:38 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70099318497440'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:12:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:57609/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:31:55 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70142564656380'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:31:55 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:59997/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:49:31 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70209807589880'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:49:31 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:60814/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:52:55 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70174776965820'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:52:55 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:61064/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:54:35 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70309874103460'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:54:35 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:61340/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:55:56 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70163450244900'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:55:56 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:61425/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:56:21 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70277466791400'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:56:21 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:61697/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:57:32 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70104110694720'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:57:32 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:61862/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 14:58:11 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70192263590500'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 14:58:11 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:62330/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.0/2016-12-24)
+      Date:
+      - Sun, 21 May 2017 15:00:16 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70202342513540'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 15:00:16 GMT
+recorded_with: VCR 3.0.3

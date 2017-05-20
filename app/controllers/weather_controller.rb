@@ -1,14 +1,18 @@
 class WeatherController < ApplicationController
-  def index; end
+  def search; end
 
-  def search_city
-    place_service = Google::Service::Place.new
-    cities = place_service.cities(params[:term])
+  def index
+    weather_service = Openweathermap::Service::Weather.new
+    @weathers = weather_service.city(params[:search][:city])
+    @city     = @weathers['city']['name']
+  end
+
+  def details
+    @city     = params[:city]
+    @weather  = params[:weather]
 
     respond_to do |format|
-      format.json do
-        render json: cities['predictions'].map { |city| city['description'] }
-      end
+      format.js
     end
   end
 end

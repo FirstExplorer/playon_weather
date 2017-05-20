@@ -1,3 +1,27 @@
-<%= simple_form_for :search, url: weather_path do |f| %>
-  <%= f.input :city, as: :search %>
-<% end %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="weather panel ">
+      <div class='current'>
+        <%= render partial: "details",
+                    locals: { weather: @weathers["list"].first,
+                              city: @weathers['city']['name'] } %>
+      </div>
+      <div class="future">
+        <% @weathers['list'].each do |weather| %>
+          <div class='day'>
+            <%= link_to details_weather_index_path(city: @weathers['city']['name'], weather: weather),
+                        {method: :post, remote: true,
+                        id: "day_#{week_day(weather['dt'])}"} do %>
+              <h3><%= week_day(weather['dt']) %></h3>
+              <p>
+                <span class='wi-day-cloudy'>
+                  <%= image_tag "http://openweathermap.org/img/w/#{weather['weather'].first['icon']}.png" %>
+                </span>
+              </p>
+            <% end%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
