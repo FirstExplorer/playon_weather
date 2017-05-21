@@ -32,6 +32,7 @@ end
 group :test do
   gem 'capybara', '~> 2.14.0'
   gem 'capybara-webkit'
+  gem 'codeclimate-test-reporter'
   gem 'faker'
   gem 'poltergeist', '~> 1.15.0'
   gem 'rails-controller-testing'
