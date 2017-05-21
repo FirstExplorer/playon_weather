@@ -1,0 +1,26 @@
+<div class='panel'>
+  <div class='row'>
+    <div class='col-sm-7 text'>
+      <h1 class='welcome title'><%= t('general.welcome.title') %></h1>
+      <div class='welcome description'>
+        <p><%= t('general.welcome.description') %><p/>
+      </div>
+    </div>
+
+    <div class='col-sm-5 form-box'>
+      <div class='form-top'>
+        <h3><%= t('search.title') %></h3>
+        <p><%= t('search.description') %></p>
+      </div>
+
+      <div class='form-bottom'>
+        <%= simple_form_for :search, method: :get, url: weather_index_path do |f| %>
+          <%= f.input :city, as: :search, placeholder: 'Search City...',
+                      input_html: { class: 'form-control' } %>
+
+          <%= f.button :submit, t('search.button'), class: 'btn btn-lg btn-primary btn-block'%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

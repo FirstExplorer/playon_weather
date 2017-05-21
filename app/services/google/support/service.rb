@@ -14,11 +14,11 @@ module Google
       end
 
       def hash_url(params)
-        base_url   = 'https://maps.googleapis.com/maps/api/place/autocomplete/json'
-        types      = "(#{params[:types]})"
-        key        = Rails.application.secrets.google_api[:key]
+        url   = 'https://maps.googleapis.com/maps/api/place/autocomplete/json'
+        types = "(#{params[:types]})"
+        key   = Rails.application.secrets.google_api[:key]
 
-        "#{base_url}?input=#{params[:input]}&types=#{types}&key=#{key}"
+        "#{url}?input=#{params[:input]}&types=#{types}&key=#{key}"
       end
     end
   end

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/forecast/daily?APPID=7cf761cff65e3714849911cbf9367ba9&cnt=7&mode=json&q=Lucan&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 21 May 2017 13:41:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1894'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/forecast/daily?APPID=7cf761cff65e3714849911cbf9367ba9&cnt=7&mode=json&q=lucan&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"city":{"id":2962785,"name":"Lucan","coord":{"lon":-6.4389,"lat":53.3592},"country":"IE","population":0},"cod":"200","message":2.7273698,"cnt":7,"list":[{"dt":1495368000,"temp":{"day":13,"min":10.82,"max":13.25,"night":10.82,"eve":12.92,"morn":13},"pressure":1019.17,"humidity":75,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"speed":8.06,"deg":181,"clouds":68},{"dt":1495454400,"temp":{"day":18.88,"min":11.78,"max":19.92,"night":11.78,"eve":18.15,"morn":12.51},"pressure":1013.06,"humidity":70,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"speed":6.67,"deg":213,"clouds":56},{"dt":1495540800,"temp":{"day":20.51,"min":14.04,"max":23.04,"night":14.15,"eve":22.6,"morn":14.04},"pressure":1020.88,"humidity":73,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"speed":6.61,"deg":247,"clouds":44},{"dt":1495627200,"temp":{"day":21.39,"min":12.36,"max":24.31,"night":14.94,"eve":24.31,"morn":12.36},"pressure":1025.47,"humidity":73,"weather":[{"id":800,"main":"Clear","description":"sky
+        is clear","icon":"01d"}],"speed":3.86,"deg":239,"clouds":0},{"dt":1495713600,"temp":{"day":15.43,"min":11.56,"max":15.43,"night":11.56,"eve":14.99,"morn":12.41},"pressure":1032.73,"humidity":0,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"speed":2.06,"deg":98,"clouds":10},{"dt":1495800000,"temp":{"day":14.35,"min":11.6,"max":14.91,"night":11.68,"eve":14.91,"morn":11.6},"pressure":1034.92,"humidity":0,"weather":[{"id":800,"main":"Clear","description":"sky
+        is clear","icon":"01d"}],"speed":2.36,"deg":92,"clouds":0},{"dt":1495886400,"temp":{"day":15.28,"min":11.81,"max":15.28,"night":11.95,"eve":15.28,"morn":11.81},"pressure":1037.32,"humidity":0,"weather":[{"id":800,"main":"Clear","description":"sky
+        is clear","icon":"01d"}],"speed":2.23,"deg":150,"clouds":5}]}'
+    http_version: 
+  recorded_at: Sun, 21 May 2017 13:41:59 GMT
+recorded_with: VCR 3.0.3

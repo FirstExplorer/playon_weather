@@ -1,0 +1,19 @@
+<div class='info'>
+  <div>&nbsp;</div>
+  <div class='city'><%= city_and_week_day(city, weather['dt'].to_i) %></div>
+  <div class='temp'><%= formated_weather(weather['temp']['day']) %></div>
+  <div class='wind'>Wind: <%= weather['speed'] %></div>
+  <div>&nbsp;</div>
+</div>
+<div class='icon'>
+  <div>&nbsp;</div>
+  <div class='row'>
+    <%= image_tag "http://openweathermap.org/img/w/#{weather['weather'].first['icon']}.png" %>
+    <br>
+    <small><%= weather['weather'].first['description'] %></small>
+  </div>
+  <div class='row'>
+    <span class='alert alert-warning'><%= formated_weather(weather['temp']['max']) %></span>
+    <span class='alert alert-info'><%= formated_weather(weather['temp']['min']) %></span>
+  </div>
+</div>

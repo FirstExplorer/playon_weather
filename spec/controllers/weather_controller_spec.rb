@@ -1,27 +1,38 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe WeatherController, type: :controller do
-  describe "#index" do
-    it "renders the index template" do
-      get :index
-      expect(response).to render_template(:index)
+  describe '#search' do
+    it 'renders the search template' do
+      get :search
+      expect(response).to render_template(:search)
     end
 
-    it "has a 200 status code" do
-      get :index
+    it 'has a 200 status code' do
+      get :search
       expect(response.status).to eq(200)
     end
   end
 
-  describe "#search_city" do
+  describe '#index' do
     let(:term) { 'Lucan' }
 
-    it "retuns json of cities", :vcr do
-      VCR.use_cassette("weather_controller/cities/lucan") do
-        get :search_city, params: { term: term }, format: :json
+    it 'renders the index template', :vcr do
+      VCR.use_cassette('weather/weathers/lucan') do
+        get :index, params: { search: { city: term } }
 
         expect(response.status).to eq(200)
-        expect(response.body).to include(term)
+        expect(response).to render_template(:index)
+      end
+    end
+  end
+
+  describe '#details' do
+    it 'renders the details template', :vcr do
+      VCR.use_cassette('weather/weathers/lucan') do
+        post :details, format: :js
+
+        expect(response.status).to eq(200)
+        expect(response).to render_template(:details)
       end
     end
   end

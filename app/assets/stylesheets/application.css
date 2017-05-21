@@ -15,4 +15,6 @@
  *= require jquery-ui.min
  *= require jquery-ui.structure.min
  *= require jquery-ui.theme.min
+ *= require bootstrap.min
+ *= require bootstrap-theme.min
  */

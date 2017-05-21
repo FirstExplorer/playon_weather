@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  root 'weather#index'
+  root 'weather#search'
 
-  get :weather, to: 'weather#index'
-  get :search_city, to: 'weather#search_city'
+  resources :weather, only: [:index] do
+    collection do
+      get 'search'
+      post 'details'
+    end
+  end
+
+  get :locate_search, to: 'locate#search'
 end
