@@ -8,7 +8,7 @@ A little project to show a city weather.
 
 ## Synopsis
 I created this project to a job test.
-You can access this project here: [https://gimail.herokuapp.com](https://gimail.herokuapp.com)
+You can access this project here: [https://giweather.herokuapp.com/](https://giweather.herokuapp.com/)
 
 My goals are:
 
