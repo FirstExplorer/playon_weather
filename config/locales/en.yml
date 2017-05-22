@@ -9,3 +9,4 @@ en:
     title: 'Search a city.'
     description: 'Select your city.'
     button: 'search'
+    link_root: 'Back'

@@ -9,8 +9,9 @@ RSpec.describe 'Weather info', type: :feature do
         visit weather_index_path(search: { city: term })
 
         expect(page).to have_content(term)
-        expect(page).to have_selector(%(a), count: 7)
+        expect(page).to have_selector(%(a), count: 8)
         expect(page).to have_selector(%(img), count: 8)
+        expect(page).to have_content(I18n.t('search.link_root'))
       end
     end
 
